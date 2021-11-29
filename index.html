@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 offset-md-4 col-12 box d-flex justify-content-center align-items-center">
+                <div class="calculator col-10 offset-1">
+                    <!--div.number#$*9-->
+                    <input type="text" class="screen p-2 text-light" id='screen'>
+                    <div class="c" onclick="clear_inp()">C</div>
+                    <div class="number" id="1" onclick="add_num('7')">7</div>
+                    <div class="number" id="2" onclick="add_num('8')">8</div>
+                    <div class="number" id="3" onclick="add_num('9')">9</div>
+                    <div class="number" id="+" onclick="add_num('+')">+</div>
+                    <div class="number" id="4" onclick="add_num('4')">4</div>
+                    <div class="number" id="5" onclick="add_num('5')">5</div>
+                    <div class="number" id="6" onclick="add_num('6')">6</div>
+                    <div class="number" id="-" onclick="add_num('-')">-</div>
+                    <div class="number" id="7" onclick="add_num('1')">1</div>
+                    <div class="number" id="8" onclick="add_num('2')">2</div>
+                    <div class="number" id="9" onclick="add_num('3')">3</div>
+                    <div class="mult" id="*" onclick="add_num('x')">x</div>
+                    <div class="deiv" id="/" onclick="add_num('/')">&divide</div>
+                    <div class="zero" id="0" onclick="add_num('0')">0</div>
+                    <div class="dot" id="." onclick="add_num('.')">.</div>
+                    <div class="equalto" id="=" onclick="rslt()">=</div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
